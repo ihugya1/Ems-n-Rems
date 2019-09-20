@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*to use browser size, must start with percent font-size on the root element */
+	html{font-size: 100%; /*this will start is at 16 px */}
+	/*I want my h1 to be 84px but in ems
+	math is desired/default
+	84/16=5.25
+
+	I want the line-height to be 60px
+	60/84 = .714 
+
+	I want a margin bottom to be only 24px
+	24/84 = .285em
+*/
+
+	
+	h1{font-size: 5.25em;
+		line-height:0.714em;
+		margin-bottom:  0.285em;}
+		/*I want the ul to be 32 px
+		desired/default
+		32 / 15*/
+ul{font-size: 2em;}
+/*What if i want my default font size to be only 12px instead of 16px
+12 / 16 = 0.75*/
+html{font-size: 75%;}
+h1{font-size: 7em;}
+	</style>
+
+
+
+</head>
+<body>
+<h1>
+	This is a title
+</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<ul>
+	<li>first</li>
+	<li>second</li>
+	<li>Third
+		<ul>
+			<li>nested first</li>
+			<li>nested second</li>
+		</ul>
+	</li>
+</ul>
+</body>
+</html>
